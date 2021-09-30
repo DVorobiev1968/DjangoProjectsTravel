@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}Список городов{% endblock %}
+{% block content %}
+<h1> Список городов</h1>
+<div class="row">
+	<div class="col-md-8 mx-auto">
+        <table class="table table-striped">
+        {% for object in objects_list %}
+            <tr>
+                <td><a href="{% url 'cities:detail' pk=object.pk %}">{{object.name}}</a></td>
+                <td><a href="{% url 'cities:update' pk=object.pk %}">
+                    <button type="submit" class="btn btn-primary">Редактировать</button>
+                    </a></td>
+                <td><a href="{% url 'cities:delete' pk=object.pk %}">
+                    <button type="submit" class="btn btn-danger">Удалить</button>
+                    </a></td>
+            </tr>
+
+        {% endfor %}
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <form action="" method="post"> {% csrf_token %}
+            {{ form.as_p }}
+          <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+# при использовании: form action="https://www.google.com/search"
+# input type="text" id="fname" name="q"
+# мы переместимся на сайт google с поиском указанного значения
+# чтобы в адресной строке не было видно: https://www.google.com/search/?q=find pattern, используем metod=post
+# при этом в адресной строке м.б. не более 256 символов
+<!--<form action="" method="post"> {% csrf_token %}-->
+<!--  <label for="fname">Город:</label><br>-->
+<!--  <input type="text" id="fname" name="name" ><br>-->
+<!--  <input type="submit" value="Submit">-->
+<!--</form>-->

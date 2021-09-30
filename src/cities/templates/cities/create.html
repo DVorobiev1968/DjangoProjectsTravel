@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Создание Города{% endblock %}
+{% block content %}
+<h1> Создание Города</h1>
+
+{% include 'form.html' with button='Сохранить' %}
+
+{% endblock %}
+# при использовании: form action="https://www.google.com/search"
+# input type="text" id="fname" name="q"
+# мы переместимся на сайт google с поиском указанного значения
+# чтобы в адресной строке не было видно: https://www.google.com/search/?q=find pattern, используем metod=post
+# при этом в адресной строке м.б. не более 256 символов
+<!--<form action="" method="post"> {% csrf_token %}-->
+<!--  <label for="fname">Город:</label><br>-->
+<!--  <input type="text" id="fname" name="name" ><br>-->
+<!--  <input type="submit" value="Submit">-->
+<!--</form>-->
