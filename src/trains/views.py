@@ -12,7 +12,8 @@ from trains.models import Train
 __all__ = (
     'home',
     'TrainListView',
-    # 'TrainDetailView', 'TrainCreateView', 'TrainUpdateView',
+    'TrainDetailView',
+    # 'TrainCreateView', 'TrainUpdateView',
     # 'TrainDeleteView',
 )
 
@@ -32,10 +33,11 @@ class TrainListView(ListView):
     model = Train
     template_name = 'trains/home.html'
 
-# class TrainDetailView(DetailView):
-#     queryset = Train.objects.all()
-#     template_name = 'trains/detail.html'
-#
+
+class TrainDetailView(DetailView):
+    queryset = Train.objects.all()
+    template_name = 'trains/detail.html'
+
 #
 # class TrainCreateView(SuccessMessageMixin, CreateView):
 #     model = Train
