@@ -13,8 +13,9 @@ __all__ = (
     'home',
     'TrainListView',
     'TrainDetailView',
-    # 'TrainCreateView', 'TrainUpdateView',
-    # 'TrainDeleteView',
+    'TrainCreateView',
+    'TrainUpdateView',
+    'TrainDeleteView',
 )
 
 
@@ -38,30 +39,30 @@ class TrainDetailView(DetailView):
     queryset = Train.objects.all()
     template_name = 'trains/detail.html'
 
-#
-# class TrainCreateView(SuccessMessageMixin, CreateView):
-#     model = Train
-#     form_class = TrainForm
-#     template_name = 'trains/create.html'
-#     success_url = reverse_lazy('trains:home')
-#     success_message = "Город успешно создан"
-#
-#
-# class TrainUpdateView(SuccessMessageMixin, UpdateView):
-#     model = Train
-#     form_class = TrainForm
-#     template_name = 'trains/update.html'
-#     success_url = reverse_lazy('trains:home')
-#     success_message = "Город успешно отредактирован"
-#
-# class TrainDeleteView(DeleteView):
-#     model = Train
-#     # для плдтверждения удаления перенаправляем на специальную для этого страницу
-#     # template_name = 'trains/delete.html'
-#     success_url = reverse_lazy('trains:home')
-#
-#     # либо делаем безусловное удаление
-#     def get(self, request, *args, **kwargs):
-#         messages.success(request, 'Город успешно удален.')
-#         return self.post(request, *args, **kwargs)
-#
+
+class TrainCreateView(SuccessMessageMixin, CreateView):
+    model = Train
+    form_class = TrainForm
+    template_name = 'trains/create.html'
+    success_url = reverse_lazy('trains:home')
+    success_message = "Реквизиты поезда успешно созданы"
+
+
+class TrainUpdateView(SuccessMessageMixin, UpdateView):
+    model = Train
+    form_class = TrainForm
+    template_name = 'trains/update.html'
+    success_url = reverse_lazy('trains:home')
+    success_message = "Реквизиты поезда успешно отредактированы"
+
+
+class TrainDeleteView(DeleteView):
+    model = Train
+    # для плдтверждения удаления перенаправляем на специальную для этого страницу
+    # template_name = 'trains/delete.html'
+    success_url = reverse_lazy('trains:home')
+
+    # либо делаем безусловное удаление
+    def get(self, request, *args, **kwargs):
+        messages.success(request, 'Поезд успешно удален.')
+        return self.post(request, *args, **kwargs)
