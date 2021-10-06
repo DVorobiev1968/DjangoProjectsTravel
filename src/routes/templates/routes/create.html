@@ -2,7 +2,7 @@
 {% block title %}Создание Маршрута{% endblock %}
 {% block content %}
 <h1> Создание Маршрута</h1>
-
-{% include 'form.html' with button='Сохранить' %}
+{% url 'save_route' as action %}
+{% include 'form.html' with button='Сохранить' action=action %}
 
 {% endblock %}

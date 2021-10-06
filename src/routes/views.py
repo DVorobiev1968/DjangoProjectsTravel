@@ -54,3 +54,16 @@ def add_route(request):
     else:
         messages.error(request, "Невозможно сохранить несуществующий маршрут")
         return redirect('/')
+
+
+def save_route(request):
+    if request.method == "POST":
+        form = RouteModelForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Маршрут успешно сохранен")
+            return redirect('/')
+        return render(request, 'routes/create.html', {'form': form})
+    else:
+        messages.error(request, "Невозможно сохранить несуществующий маршрут")
+        return redirect('/')
