@@ -41,19 +41,30 @@
                     <a class="nav-link {% if request.path == route_list %} active {% endif %}"
                        href="{% url 'list' %}">Маршруты</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle
-                    {% if request.path == cities_create_url or request.path == trains_create_url %} active {% endif %}"
-                       href="#" id="navbarDropdownMenuLink" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Добавить
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="{% url 'cities:create' %}">Новый город</a></li>
-                        <li><a class="dropdown-item" href="{% url 'trains:create' %}">Новый поезд</a></li>
-                    </ul>
-                </li>
-            </ul>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle
+                {% if request.path == cities_create_url or request.path == trains_create_url %} active {% endif %}"
+                   href="#" id="navbarDropdownMenuLink" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                    Добавить
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="{% url 'cities:create' %}">Новый город</a></li>
+                    <li><a class="dropdown-item" href="{% url 'trains:create' %}">Новый поезд</a></li>
+                </ul>
+              </li>
+             {% if not user.is_authenticated %}
+              <li class="nav-item">
+                <a class="nav-link "
+                   href="{% url 'accounts:login' %}">Войти</a>
+              </li>
+             {% else %}
+              <li class="nav-item">
+                <a class="nav-link "
+                   href="{% url 'accounts:logout' %}">Выйти</a>
+              </li>
+             {% endif %}
+             </ul>
         </div>
     </div>
 </nav>
