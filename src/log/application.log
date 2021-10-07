@@ -893,3 +893,148 @@ DEBUG 2021-10-07 14:38:44,474 utils (0.000) SELECT "auth_user"."id", "auth_user"
 DEBUG 2021-10-07 14:38:44,476 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
 DEBUG 2021-10-07 14:38:44,481 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
 DEBUG 2021-10-07 14:38:44,489 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 14:51:30,524 utils (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-07 14:51:30,527 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-07 14:51:58,716 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-07 14:51:58,720 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-07 14:52:25,858 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-07 14:52:25,860 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-07 14:56:04,800 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-07 14:56:04,803 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-07 14:56:34,971 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-07 14:56:34,975 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-07 15:02:01,919 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-07 15:02:01,923 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-07 15:02:24,920 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-07 15:02:24,924 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-07 15:03:36,683 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-07 15:03:36,686 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-07 15:10:41,408 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-07 15:10:41,412 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-07 15:10:54,955 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-07 15:10:54,959 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-07 15:14:17,666 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-07 15:14:17,671 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-07 15:14:29,619 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-07 10:14:29.614878' AND "django_session"."session_key" = '1hplhgi4ca7v9ux6qves9l8fe42ag0ni') LIMIT 21; args=('2021-10-07 10:14:29.614878', '1hplhgi4ca7v9ux6qves9l8fe42ag0ni')
+DEBUG 2021-10-07 15:14:29,626 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-10-07 15:14:29,629 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:14:29,636 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:14:29,640 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:14:49,558 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-07 10:14:49.555355' AND "django_session"."session_key" = '1hplhgi4ca7v9ux6qves9l8fe42ag0ni') LIMIT 21; args=('2021-10-07 10:14:49.555355', '1hplhgi4ca7v9ux6qves9l8fe42ag0ni')
+DEBUG 2021-10-07 15:14:49,558 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-10-07 15:14:52,772 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-07 10:14:52.770123' AND "django_session"."session_key" = '1hplhgi4ca7v9ux6qves9l8fe42ag0ni') LIMIT 21; args=('2021-10-07 10:14:52.770123', '1hplhgi4ca7v9ux6qves9l8fe42ag0ni')
+DEBUG 2021-10-07 15:14:52,773 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-10-07 15:14:54,818 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-07 10:14:54.817382' AND "django_session"."session_key" = '1hplhgi4ca7v9ux6qves9l8fe42ag0ni') LIMIT 21; args=('2021-10-07 10:14:54.817382', '1hplhgi4ca7v9ux6qves9l8fe42ag0ni')
+DEBUG 2021-10-07 15:14:54,819 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-10-07 15:14:56,380 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-07 10:14:56.378464' AND "django_session"."session_key" = '1hplhgi4ca7v9ux6qves9l8fe42ag0ni') LIMIT 21; args=('2021-10-07 10:14:56.378464', '1hplhgi4ca7v9ux6qves9l8fe42ag0ni')
+DEBUG 2021-10-07 15:14:56,381 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-10-07 15:15:04,581 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-07 10:15:04.578620' AND "django_session"."session_key" = '1hplhgi4ca7v9ux6qves9l8fe42ag0ni') LIMIT 21; args=('2021-10-07 10:15:04.578620', '1hplhgi4ca7v9ux6qves9l8fe42ag0ni')
+DEBUG 2021-10-07 15:15:04,582 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-10-07 15:15:04,585 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:15:04,592 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:15:04,597 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:16:54,322 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-07 10:16:54.320424' AND "django_session"."session_key" = '1hplhgi4ca7v9ux6qves9l8fe42ag0ni') LIMIT 21; args=('2021-10-07 10:16:54.320424', '1hplhgi4ca7v9ux6qves9l8fe42ag0ni')
+DEBUG 2021-10-07 15:16:54,323 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-10-07 15:16:54,325 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:16:54,328 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:16:54,332 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:16:56,036 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-07 10:16:56.034766' AND "django_session"."session_key" = '1hplhgi4ca7v9ux6qves9l8fe42ag0ni') LIMIT 21; args=('2021-10-07 10:16:56.034766', '1hplhgi4ca7v9ux6qves9l8fe42ag0ni')
+DEBUG 2021-10-07 15:16:56,036 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-10-07 15:16:56,037 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '1hplhgi4ca7v9ux6qves9l8fe42ag0ni' LIMIT 21; args=('1hplhgi4ca7v9ux6qves9l8fe42ag0ni',)
+DEBUG 2021-10-07 15:16:56,058 utils (0.031) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('1hplhgi4ca7v9ux6qves9l8fe42ag0ni'); args=('1hplhgi4ca7v9ux6qves9l8fe42ag0ni',)
+DEBUG 2021-10-07 15:16:56,092 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:16:56,096 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:16:56,100 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:18:13,261 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:18:13,269 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:18:13,275 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+ERROR 2021-10-07 15:19:12,258 log Internal Server Error: /accounts/register/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\src\accounts\views.py", line 26, in registration_view
+    if form.is_valid():
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\forms\forms.py", line 175, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\forms\forms.py", line 170, in errors
+    self.full_clean()
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\forms\forms.py", line 372, in full_clean
+    self._clean_fields()
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\forms\forms.py", line 393, in _clean_fields
+    value = getattr(self, 'clean_%s' % name)()
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\src\accounts\forms.py", line 58, in clean_password2
+    raise ValueError('Пароли не совпадают')
+ValueError: Пароли не совпадают
+DEBUG 2021-10-07 15:19:32,643 utils (0.000) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'user_1' LIMIT 1; args=('user_1',)
+DEBUG 2021-10-07 15:19:33,167 utils (0.015) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$260000$07OtyEapTuM4HTH2QR8IrI$PifkZKjCgpzmTqN2ucfSXC9jUSlY8q6/7xO8v2K2g28=', NULL, 0, 'user_1', '', '', '', 0, 1, '2021-10-07 10:19:32.639790'); args=['pbkdf2_sha256$260000$07OtyEapTuM4HTH2QR8IrI$PifkZKjCgpzmTqN2ucfSXC9jUSlY8q6/7xO8v2K2g28=', None, False, 'user_1', '', '', '', False, True, '2021-10-07 10:19:32.639790']
+ERROR 2021-10-07 15:19:33,214 log Internal Server Error: /accounts/register/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\src\accounts\views.py", line 30, in registration_view
+    return render(request, 'accounts/done.html',{'new_user':new_user})
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: accounts/done.html
+DEBUG 2021-10-07 15:21:47,940 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:21:47,945 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:21:47,953 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:22:05,271 utils (0.000) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'user_1' LIMIT 1; args=('user_1',)
+DEBUG 2021-10-07 15:22:20,092 utils (0.000) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'user_2' LIMIT 1; args=('user_2',)
+DEBUG 2021-10-07 15:22:20,622 utils (0.031) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$260000$DfzwJr46ZTgm1ZGP7xqMCS$2iPMddOT3TNESjAtVWkJlIyWCSwho+v7ccKgqJ0U/6U=', NULL, 0, 'user_2', '', '', '', 0, 1, '2021-10-07 10:22:20.090367'); args=['pbkdf2_sha256$260000$DfzwJr46ZTgm1ZGP7xqMCS$2iPMddOT3TNESjAtVWkJlIyWCSwho+v7ccKgqJ0U/6U=', None, False, 'user_2', '', '', '', False, True, '2021-10-07 10:22:20.090367']
+DEBUG 2021-10-07 15:22:42,425 utils (0.000) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'user_2' LIMIT 1; args=('user_2',)
+DEBUG 2021-10-07 15:22:42,427 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'user_2' LIMIT 1; args=('user_2',)
+DEBUG 2021-10-07 15:22:42,928 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'user_2' LIMIT 21; args=('user_2',)
+DEBUG 2021-10-07 15:22:43,437 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'user_2' LIMIT 21; args=('user_2',)
+DEBUG 2021-10-07 15:22:43,943 utils (0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'ueyqm2l4dad25wx8ra9l3uy5csb66irr' LIMIT 1; args=('ueyqm2l4dad25wx8ra9l3uy5csb66irr',)
+DEBUG 2021-10-07 15:22:43,944 utils (0.000) BEGIN; args=None
+DEBUG 2021-10-07 15:22:43,949 utils (0.015) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'ueyqm2l4dad25wx8ra9l3uy5csb66irr', 'e30:1mYQXz:XmWA1NYOEMPrmSCcENUz1RkABUHqGUTq2Deysty5-0Q', '2021-10-21 10:22:43.943094'; args=('ueyqm2l4dad25wx8ra9l3uy5csb66irr', 'e30:1mYQXz:XmWA1NYOEMPrmSCcENUz1RkABUHqGUTq2Deysty5-0Q', '2021-10-21 10:22:43.943094')
+DEBUG 2021-10-07 15:22:43,972 utils (0.000) UPDATE "auth_user" SET "last_login" = '2021-10-07 10:22:43.964556' WHERE "auth_user"."id" = 3; args=('2021-10-07 10:22:43.964556', 3)
+DEBUG 2021-10-07 15:22:43,974 utils (0.000) BEGIN; args=None
+DEBUG 2021-10-07 15:22:43,977 utils (0.016) UPDATE "django_session" SET "session_data" = '.eJxVjDsOwjAQBe_iGllxsv6Ekp4zWLvZNQ4gW4qTCnF3iJQC2jcz76UibmuOW5MlzqzOalCn341wekjZAd-x3KqealmXmfSu6IM2fa0sz8vh_h1kbPlbA7NYG1IwRBLCaBkm7nsJjuxoZAADbDqk5LxLDowBHNxoPXTIyZOo9wfrGjfj:1mYQXz:WwN-dQOo3-OhbxVvDegdjMeoeGJ-mxhzI-v6KBA68XY', "expire_date" = '2021-10-21 10:22:43.974536' WHERE "django_session"."session_key" = 'ueyqm2l4dad25wx8ra9l3uy5csb66irr'; args=('.eJxVjDsOwjAQBe_iGllxsv6Ekp4zWLvZNQ4gW4qTCnF3iJQC2jcz76UibmuOW5MlzqzOalCn341wekjZAd-x3KqealmXmfSu6IM2fa0sz8vh_h1kbPlbA7NYG1IwRBLCaBkm7nsJjuxoZAADbDqk5LxLDowBHNxoPXTIyZOo9wfrGjfj:1mYQXz:WwN-dQOo3-OhbxVvDegdjMeoeGJ-mxhzI-v6KBA68XY', '2021-10-21 10:22:43.974536', 'ueyqm2l4dad25wx8ra9l3uy5csb66irr')
+DEBUG 2021-10-07 15:22:44,018 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-07 10:22:44.011983' AND "django_session"."session_key" = 'ueyqm2l4dad25wx8ra9l3uy5csb66irr') LIMIT 21; args=('2021-10-07 10:22:44.011983', 'ueyqm2l4dad25wx8ra9l3uy5csb66irr')
+DEBUG 2021-10-07 15:22:44,018 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,)
+DEBUG 2021-10-07 15:22:44,020 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:22:44,025 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 15:22:44,029 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
