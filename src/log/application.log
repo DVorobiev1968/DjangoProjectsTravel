@@ -351,3 +351,228 @@ DEBUG 2021-10-06 14:29:28,543 utils (0.000) SELECT "cities_city"."id", "cities_c
 DEBUG 2021-10-06 14:29:28,544 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 10 LIMIT 21; args=(10,)
 DEBUG 2021-10-06 14:29:28,631 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-06 09:29:28.620915' AND "django_session"."session_key" = 'm5u2qshyaqqdyqtf3was6mcb6wujaos2') LIMIT 21; args=('2021-10-06 09:29:28.620915', 'm5u2qshyaqqdyqtf3was6mcb6wujaos2')
 DEBUG 2021-10-06 14:29:28,636 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-10-06 14:31:27,464 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:31:27,474 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:31:27,488 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:42:56,732 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:42:56,749 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:42:56,766 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:42:56,805 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:42:56,827 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:42:56,843 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:43:06,286 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 16 LIMIT 21; args=(16,)
+DEBUG 2021-10-06 14:43:06,288 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-10-06 14:43:06,292 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-10-06 14:43:06,308 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:43:06,318 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:43:06,328 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:43:09,961 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" IN (16, 4) ORDER BY "cities_city"."name" ASC; args=(16, 4)
+DEBUG 2021-10-06 14:43:09,986 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") WHERE "trains_train"."id" IN (18) ORDER BY "trains_train"."travel_time" ASC; args=(18,)
+DEBUG 2021-10-06 14:43:09,987 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id" FROM "trains_train" ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-10-06 14:43:09,988 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 5 LIMIT 21; args=(5,)
+DEBUG 2021-10-06 14:43:09,989 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 5 LIMIT 21; args=(5,)
+DEBUG 2021-10-06 14:43:09,990 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-10-06 14:43:09,992 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 15 LIMIT 21; args=(15,)
+DEBUG 2021-10-06 14:43:09,993 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 16 LIMIT 21; args=(16,)
+DEBUG 2021-10-06 14:43:09,994 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-10-06 14:43:09,995 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 5 LIMIT 21; args=(5,)
+DEBUG 2021-10-06 14:43:09,997 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 10 LIMIT 21; args=(10,)
+DEBUG 2021-10-06 14:43:09,999 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 16 LIMIT 21; args=(16,)
+DEBUG 2021-10-06 14:43:10,002 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 15 LIMIT 21; args=(15,)
+DEBUG 2021-10-06 14:43:10,003 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 16 LIMIT 21; args=(16,)
+DEBUG 2021-10-06 14:43:10,004 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 10 LIMIT 21; args=(10,)
+DEBUG 2021-10-06 14:43:26,483 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 16 LIMIT 21; args=(16,)
+DEBUG 2021-10-06 14:43:26,485 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-10-06 14:43:26,487 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id" FROM "trains_train" WHERE "trains_train"."id" IN (18) ORDER BY "trains_train"."travel_time" ASC; args=(18,)
+DEBUG 2021-10-06 14:43:26,491 utils (0.000) SELECT (1) AS "a" FROM "cities_city" WHERE "cities_city"."id" = 16 LIMIT 1; args=(16,)
+DEBUG 2021-10-06 14:43:26,492 utils (0.000) SELECT (1) AS "a" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 1; args=(4,)
+DEBUG 2021-10-06 14:43:26,494 utils (0.000) SELECT (1) AS "a" FROM "routes_route" WHERE "routes_route"."name" = 'BVa-2' LIMIT 1; args=('BVa-2',)
+DEBUG 2021-10-06 14:43:26,504 utils (0.016) INSERT INTO "routes_route" ("name", "travel_times", "from_city_id", "to_city_id") VALUES ('BVa-2', 69, 16, 4); args=['BVa-2', 69, 16, 4]
+DEBUG 2021-10-06 14:43:26,505 utils (0.000) BEGIN; args=None
+DEBUG 2021-10-06 14:43:26,508 utils (0.000) SELECT "trains_train"."id" FROM "trains_train" INNER JOIN "routes_route_trains" ON ("trains_train"."id" = "routes_route_trains"."train_id") WHERE "routes_route_trains"."route_id" = 3 ORDER BY "trains_train"."travel_time" ASC; args=(3,)
+DEBUG 2021-10-06 14:43:26,510 utils (0.000) INSERT OR IGNORE INTO "routes_route_trains" ("route_id", "train_id") SELECT 3, 18; args=(3, 18)
+DEBUG 2021-10-06 14:43:26,561 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:43:26,570 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:43:26,580 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:43:42,290 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-06 09:43:42.287689' AND "django_session"."session_key" = 'm5u2qshyaqqdyqtf3was6mcb6wujaos2') LIMIT 21; args=('2021-10-06 09:43:42.287689', 'm5u2qshyaqqdyqtf3was6mcb6wujaos2')
+DEBUG 2021-10-06 14:43:42,291 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-10-06 14:43:42,325 utils (0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(1,)
+DEBUG 2021-10-06 14:43:45,545 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-06 09:43:45.543985' AND "django_session"."session_key" = 'm5u2qshyaqqdyqtf3was6mcb6wujaos2') LIMIT 21; args=('2021-10-06 09:43:45.543985', 'm5u2qshyaqqdyqtf3was6mcb6wujaos2')
+DEBUG 2021-10-06 14:43:45,548 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-10-06 14:43:45,549 utils (0.000) SELECT COUNT(*) AS "__count" FROM "routes_route"; args=()
+DEBUG 2021-10-06 14:43:45,550 utils (0.000) SELECT COUNT(*) AS "__count" FROM "routes_route"; args=()
+DEBUG 2021-10-06 14:43:45,553 utils (0.000) SELECT "routes_route"."id", "routes_route"."name", "routes_route"."travel_times", "routes_route"."from_city_id", "routes_route"."to_city_id" FROM "routes_route" ORDER BY "routes_route"."travel_times" ASC, "routes_route"."id" DESC; args=()
+DEBUG 2021-10-06 14:43:45,613 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 5 LIMIT 21; args=(5,)
+DEBUG 2021-10-06 14:43:45,618 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 16 LIMIT 21; args=(16,)
+DEBUG 2021-10-06 14:43:45,622 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 16 LIMIT 21; args=(16,)
+DEBUG 2021-10-06 14:43:45,669 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-06 09:43:45.665787' AND "django_session"."session_key" = 'm5u2qshyaqqdyqtf3was6mcb6wujaos2') LIMIT 21; args=('2021-10-06 09:43:45.665787', 'm5u2qshyaqqdyqtf3was6mcb6wujaos2')
+DEBUG 2021-10-06 14:43:45,672 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-10-06 14:43:48,291 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-06 09:43:48.289044' AND "django_session"."session_key" = 'm5u2qshyaqqdyqtf3was6mcb6wujaos2') LIMIT 21; args=('2021-10-06 09:43:48.289044', 'm5u2qshyaqqdyqtf3was6mcb6wujaos2')
+DEBUG 2021-10-06 14:43:48,292 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-10-06 14:43:48,293 utils (0.000) BEGIN; args=None
+DEBUG 2021-10-06 14:43:48,294 utils (0.000) SELECT "routes_route"."id", "routes_route"."name", "routes_route"."travel_times", "routes_route"."from_city_id", "routes_route"."to_city_id" FROM "routes_route" WHERE "routes_route"."id" = 3 LIMIT 21; args=(3,)
+DEBUG 2021-10-06 14:43:48,297 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id" FROM "trains_train" INNER JOIN "routes_route_trains" ON ("trains_train"."id" = "routes_route_trains"."train_id") WHERE "routes_route_trains"."route_id" = 3 ORDER BY "trains_train"."travel_time" ASC; args=(3,)
+DEBUG 2021-10-06 14:43:48,301 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 16 LIMIT 21; args=(16,)
+DEBUG 2021-10-06 14:43:48,356 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:43:48,369 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 14:43:48,383 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id" FROM "trains_train" ORDER BY "trains_train"."travel_time" ASC; args=()
+DEBUG 2021-10-06 14:43:48,384 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 5 LIMIT 21; args=(5,)
+DEBUG 2021-10-06 14:43:48,385 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 5 LIMIT 21; args=(5,)
+DEBUG 2021-10-06 14:43:48,387 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-10-06 14:43:48,389 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 15 LIMIT 21; args=(15,)
+DEBUG 2021-10-06 14:43:48,391 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 16 LIMIT 21; args=(16,)
+DEBUG 2021-10-06 14:43:48,392 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-10-06 14:43:48,393 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 5 LIMIT 21; args=(5,)
+DEBUG 2021-10-06 14:43:48,394 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 10 LIMIT 21; args=(10,)
+DEBUG 2021-10-06 14:43:48,395 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 16 LIMIT 21; args=(16,)
+DEBUG 2021-10-06 14:43:48,397 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 15 LIMIT 21; args=(15,)
+DEBUG 2021-10-06 14:43:48,398 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 16 LIMIT 21; args=(16,)
+DEBUG 2021-10-06 14:43:48,399 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 10 LIMIT 21; args=(10,)
+DEBUG 2021-10-06 14:43:48,458 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-06 09:43:48.454109' AND "django_session"."session_key" = 'm5u2qshyaqqdyqtf3was6mcb6wujaos2') LIMIT 21; args=('2021-10-06 09:43:48.454109', 'm5u2qshyaqqdyqtf3was6mcb6wujaos2')
+DEBUG 2021-10-06 14:43:48,462 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-10-06 14:47:23,355 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-06 14:47:23,364 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-06 14:55:50,699 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-06 14:55:50,705 utils (0.016) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-06 15:02:15,194 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-06 15:02:15,197 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-06 15:02:22,874 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-06 10:02:22.872225' AND "django_session"."session_key" = 'm5u2qshyaqqdyqtf3was6mcb6wujaos2') LIMIT 21; args=('2021-10-06 10:02:22.872225', 'm5u2qshyaqqdyqtf3was6mcb6wujaos2')
+DEBUG 2021-10-06 15:02:22,876 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+DEBUG 2021-10-06 15:02:22,907 utils (0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(1,)
+DEBUG 2021-10-06 15:02:23,975 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-06 10:02:23.973218' AND "django_session"."session_key" = 'm5u2qshyaqqdyqtf3was6mcb6wujaos2') LIMIT 21; args=('2021-10-06 10:02:23.973218', 'm5u2qshyaqqdyqtf3was6mcb6wujaos2')
+DEBUG 2021-10-06 15:02:23,976 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+ERROR 2021-10-06 15:02:24,012 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'routes'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\src\routes\views.py", line 14, in home
+    return render(request, 'routes/home.html', {'form': form})
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'routes' is not a registered namespace
+DEBUG 2021-10-06 15:03:18,931 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 15:03:18,939 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 15:03:18,943 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-06 15:03:21,903 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-06 10:03:21.901590' AND "django_session"."session_key" = 'm5u2qshyaqqdyqtf3was6mcb6wujaos2') LIMIT 21; args=('2021-10-06 10:03:21.901590', 'm5u2qshyaqqdyqtf3was6mcb6wujaos2')
+DEBUG 2021-10-06 15:03:21,904 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+ERROR 2021-10-06 15:03:21,921 log Internal Server Error: /list/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: __init__() takes 1 positional argument but 2 were given
+DEBUG 2021-10-06 15:14:17,102 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-06 10:14:17.101532' AND "django_session"."session_key" = 'm5u2qshyaqqdyqtf3was6mcb6wujaos2') LIMIT 21; args=('2021-10-06 10:14:17.101532', 'm5u2qshyaqqdyqtf3was6mcb6wujaos2')
+DEBUG 2021-10-06 15:14:17,103 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+ERROR 2021-10-06 15:14:17,123 log Internal Server Error: /list/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: __init__() takes 1 positional argument but 2 were given
+DEBUG 2021-10-06 15:20:19,034 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-06 15:20:19,038 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-07 09:01:09,959 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-07 09:01:09,962 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-07 09:01:13,320 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 09:01:13,361 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 09:01:13,372 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 09:01:13,455 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 09:01:13,480 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+DEBUG 2021-10-07 09:01:13,500 utils (0.016) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=()
+WARNING 2021-10-07 09:01:14,270 log Not Found: /favicon.ico
+WARNING 2021-10-07 09:01:14,276 log Not Found: /favicon.ico
+DEBUG 2021-10-07 09:01:29,982 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-07 04:01:29.976558' AND "django_session"."session_key" = 'm5u2qshyaqqdyqtf3was6mcb6wujaos2') LIMIT 21; args=('2021-10-07 04:01:29.976558', 'm5u2qshyaqqdyqtf3was6mcb6wujaos2')
+DEBUG 2021-10-07 09:01:29,986 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+ERROR 2021-10-07 09:01:30,038 log Internal Server Error: /list/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: __init__() takes 1 positional argument but 2 were given
+DEBUG 2021-10-07 09:01:56,650 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-07 04:01:56.644480' AND "django_session"."session_key" = 'm5u2qshyaqqdyqtf3was6mcb6wujaos2') LIMIT 21; args=('2021-10-07 04:01:56.644480', 'm5u2qshyaqqdyqtf3was6mcb6wujaos2')
+DEBUG 2021-10-07 09:01:56,652 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+ERROR 2021-10-07 09:01:56,700 log Internal Server Error: /list/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: __init__() takes 1 positional argument but 2 were given
+DEBUG 2021-10-07 09:15:04,901 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-07 09:15:04,907 utils (0.016) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-07 09:15:10,453 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-10-07 04:15:10.443217' AND "django_session"."session_key" = 'm5u2qshyaqqdyqtf3was6mcb6wujaos2') LIMIT 21; args=('2021-10-07 04:15:10.443217', 'm5u2qshyaqqdyqtf3was6mcb6wujaos2')
+DEBUG 2021-10-07 09:15:10,463 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+ERROR 2021-10-07 09:15:10,729 log Internal Server Error: /list/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoProjects\3_Lession\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: __init__() takes 1 positional argument but 2 were given
+DEBUG 2021-10-07 09:24:23,389 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2021-10-07 09:24:23,397 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+DEBUG 2021-10-07 09:24:31,269 utils (0.000) SELECT COUNT(*) AS "__count" FROM "routes_route"; args=()
+DEBUG 2021-10-07 09:24:31,375 utils (0.016) SELECT "routes_route"."id", "routes_route"."name", "routes_route"."travel_times", "routes_route"."from_city_id", "routes_route"."to_city_id" FROM "routes_route" ORDER BY "routes_route"."travel_times" ASC LIMIT 3; args=()
+DEBUG 2021-10-07 09:24:31,382 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 5 LIMIT 21; args=(5,)
+DEBUG 2021-10-07 09:24:31,393 utils (0.015) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 6 LIMIT 21; args=(6,)
+DEBUG 2021-10-07 09:24:31,414 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 16 LIMIT 21; args=(16,)
+DEBUG 2021-10-07 09:24:31,418 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
+DEBUG 2021-10-07 09:24:31,423 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 16 LIMIT 21; args=(16,)
+DEBUG 2021-10-07 09:24:31,426 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,)
