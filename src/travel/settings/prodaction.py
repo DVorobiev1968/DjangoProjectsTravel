@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+
 # import django_heroku
 # django_heroku.settings(locals())
 
@@ -97,7 +98,8 @@ DATABASES = {
     }
 }
 import dj_database_url
-db=dj_database_url.config()
+
+db = dj_database_url.config()
 DATABASES['default'].update(db)
 
 # Password validation
@@ -180,4 +182,4 @@ LOGGING = {
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-STATIC_ROOT=BASE_DIR.joinpath('staticfiles')
+STATIC_ROOT = BASE_DIR.joinpath('staticfiles')
