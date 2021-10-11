@@ -1,1 +1,16 @@
+.idea
 /venv/
+log
+# Unit test ? coverage reports
+htmlcov/
+,tox/
+.coverage
+.coverage.*
+nosettest.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Django stuff:
+*.log
+local_settings.py
